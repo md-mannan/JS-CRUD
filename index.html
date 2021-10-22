@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/all.css" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h2 class="bg-light py-4 text-info">
+        <i class="fas fa-plug"></i> Electric Shop
+      </h2>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <form action="" method="post" class="w-50" onsubmit="event.preventDefault();onFormSubmit();">
+        <input type="text" class="form-control" id="id" readonly name="id" placeholder="ID" />
+        <input type="text" class="form-control" id="name" name="name" placeholder="Product Name" />
+
+        <div class="row ">
+          <div class="col">
+            <input type="text" class="form-control m-0" id="saller" name="saller" placeholder="Saller" />
+          </div>
+          <div class="col">
+            <input type="text" class="form-control m-0" id="price" name="price" placeholder="Price" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center" >
+          <button type="button" class="btn btn-success" id="btnCreate">Create</button>
+          <button type="button" class="btn btn-info" id="btnRead">Read</button>
+          <button type="button" class="btn btn-warning" id="btnUpdate">Update</button>
+          <button type="button" class="btn btn-danger" id="btnDeleteAll">Delete All</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <table class="table table-striped " id="productList">
+        <thead>
+          <tr>
+            <th scope="col">SN</th>
+            <th>Product Name</th>
+            <th>Saller Name</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th class=" ">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+       
+        <tr>
+          <td scope="row">01</td>
+          <td>Dell Latitude E5440</td>
+          <td>Mannan Enterprize</td>
+          <td>190 KD</td>
+          <td><i class="fas fa-edit text-success btnEdit"></i></td>
+          <td class=""><i class="fas fa-trash-alt text-danger btnDelete"></i></td>
+        </tr>
+      </table>
+    </div>
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/all.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+  </body>
+</html>
